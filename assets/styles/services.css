@@ -169,6 +169,7 @@ section.services-section h1 {
 .cta-button:hover {
     background-color: white;
     transform: translateY(-3px);
+    color: var(--verde-escuro) !important;
 }
 
 .info-text {

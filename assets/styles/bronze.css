@@ -63,14 +63,13 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.bronze-section .diamond{
+.bronze-section .diamond {
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 .sessao-info h2 {
@@ -136,4 +135,220 @@
     pointer-events: none;
     z-index: 10;
     display: none;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1200px) {
+    .right-div h1 {
+        font-size: 3rem;
+    }
+
+    .sessao-info h2 {
+        font-size: 2.5rem;
+    }
+
+    .sessao-info ul li {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .right-div {
+        padding: 30px;
+    }
+
+    .right-div h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .sessao-info h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .sessao-info ul li {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .btn-agendar {
+        width: 180px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .bronze-section {
+        flex-direction: column;
+        height: auto;
+        min-height: 100dvh;
+    }
+
+    .left-div, .right-div {
+        width: 100%;
+    }
+
+    .left-div {
+        height: 50vh;
+    }
+
+    .image-container, .reveal-mask {
+        height: 100%;
+    }
+
+    .right-div {
+        padding: 30px 20px;
+    }
+
+    .right-div h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .sessao-info h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .sessao-info ul {
+        padding-left: 10px;
+    }
+
+    .btn-agendar {
+        margin: 20px auto 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .right-div h1 {
+        font-size: 2rem;
+    }
+
+    .sessao-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .sessao-info ul li {
+        font-size: 1.3rem;
+    }
+
+    .btn-agendar {
+        width: 160px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1200px) {
+    .right-div h1 {
+        font-size: 3rem;
+    }
+
+    .sessao-info h2 {
+        font-size: 2.5rem;
+    }
+
+    .sessao-info ul li {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .right-div {
+        padding: 30px;
+    }
+
+    .right-div h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .sessao-info h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .sessao-info ul li {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .btn-agendar {
+        width: 180px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .bronze-section {
+        flex-direction: column-reverse;
+        height: auto;
+        min-height: 100dvh;
+    }
+
+    .left-div, .right-div {
+        width: 100%;
+    }
+
+    .left-div {
+        height: 40vh;
+    }
+
+    .image-container, .reveal-mask {
+        height: 100%;
+    }
+
+    .right-div h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .sessao-info{
+        text-align: center;
+    }
+    .sessao-info h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .sessao-info ul {
+        margin: 15px;
+        gap: 5px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-agendar {
+        margin: 20px auto 0;
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .right-div h1 {
+        font-size: 2rem;
+    }
+
+    .sessao-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .sessao-info ul li {
+        font-size: 1.3rem;
+    }
+
+    .btn-agendar {
+        width: 160px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
 }
