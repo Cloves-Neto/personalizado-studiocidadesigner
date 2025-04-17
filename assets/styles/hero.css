@@ -1,0 +1,43 @@
+.video-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #000;
+    opacity: .6;
+}
+
+/* Para desktop: vídeo preenche o container mantendo aspect ratio */
+@media screen and (min-width: 769px) {
+    .video-container {
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-video {
+        width: 100%;
+        height: auto;
+        /* Mantém proporção mas garante cobertura mínima */
+        min-height: 100%;
+        min-width: 100%;
+        object-fit: contain;
+    }
+}
+
+/* Para mobile: vídeo mantém seu tamanho natural */
+@media screen and (max-width: 768px) {
+    .video-container {
+        height: auto;
+        overflow: visible;
+    }
+
+    .hero-video {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+}

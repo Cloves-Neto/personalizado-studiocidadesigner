@@ -1,0 +1,139 @@
+.bronze-section {
+    display: flex;
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--verde-escuro);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.left-div {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.front-image, .back-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contêiner para a imagem de fundo que será revelada */
+.reveal-mask {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    /* A imagem de fundo será visível apenas na área definida pelo clipPath */
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    transition: clip-path 0.1s ease; /* Suaviza um pouco o movimento */
+}
+
+.right-div {
+    width: 50%;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.right-div h1 {
+    font-family: var(--font-labrada);
+    color: var(--creme);
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bronze-section .diamond{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.sessao-info h2 {
+    font-size: 3rem;
+    font-family: var(--fomnt-karla);
+    color: var(--verde-escuro);
+    margin-bottom: 1.5rem;
+}
+
+.sessao-info ul {
+    list-style-type: none;
+}
+
+.sessao-info ul li {
+    margin-bottom: 12px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-family: var(--fomnt-karla);
+    color: var(--creme);
+}
+
+.sessao-info ul li::before {
+    content: "•";
+    margin-right: 10px;
+    color: var(--creme);
+    font-size: 1.5rem;
+}
+
+.btn-agendar {
+    background-color: var(--verde-escuro);
+    color: var(--creme);
+    width: 200px;
+    height: 60px;
+    border: none;
+    padding: 0 15px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    letter-spacing: .2rem;
+    font-family: var(--fomnt-karla);
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-agendar:hover {
+    background-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Indicador de divisão */
+.divider-line {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    z-index: 10;
+    display: none;
+}

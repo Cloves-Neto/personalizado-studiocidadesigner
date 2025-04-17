@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Labrada:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --verde: #4DA1A9;
+    --verde-claro: #71BBB2;
+    --verde-escuro: #257180;
+    --escuro-glass: #2571806f;
+    --claro-glass: #71bbb2c3;
+    --creme: #EFE9D5;
+    --font-labrada: 'Labrada', serif;
+    --font-karla: 'Karla', sans-serif;
+}
+
+body {
+    background: var(--verde-escuro);
+    min-height: 100vh;
+    /* padding-top: 100px; */
+}

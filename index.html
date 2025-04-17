@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Studio Cida Designer</title>
+    <link rel="stylesheet" href="./assets/styles/root.css">
+    <link rel="stylesheet" href="./assets/styles/menu.css">
+    <link rel="stylesheet" href="./assets/styles/hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/styles/services.css">
+    <link rel="stylesheet" href="./assets/styles/about.css">
+    <link rel="stylesheet" href="./assets/styles/bronze.css">
+    <link rel="stylesheet" href="./assets/styles/premios.css">
+</head>
+<body>
+
+    <header class="header-menu">
+
+        <div class="logo">
+            <img src="./assets/images/logo.svg" alt="Logo da Empresa">
+        </div>
+
+        <nav id="navbar">
+
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <div class="mobile-cta">
+                <button class="cta-button">Agendar</button>
+            </div>
+
+        </nav>
+        <!-- Botão na versão desktop -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <main class="content">
+            <!-- Hero Section Video de Cover -->
+            <section class="video-container">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="./assets/videos/banner.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+            </section>
+
+            <section class="services-section">
+                <h1>SERVIÇOS</h1>
+                <p class="subtitle">Cuidados personalizados para realçar o seu brilho único.</p>
+
+                <div class="carousel-wrapper">
+
+                    <div class="carousel-container">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/servicos/bronze.png" alt="Peeling Diamante" class="service-img">
+                                    <div class="service-title">PEELING DIAMANTE</div>
+                                    <button class="ver-mais">VER MAIS</button>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/servicos/labios.png" alt="Peeling Diamante" class="service-img">
+                                    <div class="service-title">PEELING DIAMANTE</div>
+                                    <button class="ver-mais">VER MAIS</button>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/servicos/laser.png" alt="Peeling Diamante" class="service-img">
+                                    <div class="service-title">PEELING DIAMANTE</div>
+                                    <button class="ver-mais">VER MAIS</button>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/servicos/micro.png" alt="Peeling Diamante" class="service-img">
+                                    <div class="service-title">PEELING DIAMANTE</div>
+                                    <button class="ver-mais">VER MAIS</button>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/servicos/pelling.png" alt="Peeling Diamante" class="service-img">
+                                    <div class="service-title">PEELING DIAMANTE</div>
+                                    <button class="ver-mais">VER MAIS</button>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/servicos/unhas.png" alt="Peeling Diamante" class="service-img">
+                                    <div class="service-title">PEELING DIAMANTE</div>
+                                    <button class="ver-mais">VER MAIS</button>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                <!-- Botões de navegação personalizados fora do swiper -->
+                <button class="carousel-nav-button carousel-button-prev"><ion-icon name="chevron-back-outline"></ion-icon><span class="hidden">left</span></button>
+                <button class="carousel-nav-button carousel-button-next"><ion-icon name="chevron-forward-outline"></ion-icon><span class="hidden">right</span></button>
+            </div>
+
+                <button class="cta-button">VER PREÇO E AGENDAR</button>
+
+                <p class="info-text">Para receber nossa tabela de preços completa e garantir seu horário, fale conosco no WhatsApp!</p>
+            </section>
+
+            <section class="about-section">
+                <div class="background-image">
+                    <img src="./assets/images/bg/rows.png" alt="background rows sprite">
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h1>CIDA DESIGNER</h1>
+                        <p class="description">
+                            Cida Designer, pioneira na micropigmentação, ama realçar a beleza natural de suas clientes. Seu objetivo é fortalecer a autoestima de cada uma, destacando o que já é lindo, sem criar novos rostos — apenas aprimorando o que já existe.
+                        </p>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="stat">
+                            <div class="stat-value"><span id="years-counter">0</span> anos</div>
+                            <div class="stat-label">no Mercado</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">Pioneira na</div>
+                            <div class="stat-label">Micropigmentação</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">+<span id="clients-counter">0</span> Mil</div>
+                            <div class="stat-label">Clientes Atendidas</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bronze-section">
+
+                <img class="diamond" src="./assets/images/bg/diamond.png" alt="brilho de fundo">
+
+
+
+                <div class="left-div" id="leftDiv">
+                    <div class="image-container">
+                        <img src="./assets/images/bronze/bronze-cima.png" alt="Imagem principal" class="front-image">
+                    </div>
+                    <div class="reveal-mask" id="revealMask">
+                        <img src="./assets/images/bronze/bronze-baixo.png" alt="Imagem revelada" class="back-image">
+                    </div>
+                    <div class="divider-line" id="dividerLine"></div>
+                </div>
+
+                <div class="right-div">
+
+                    <h1>BRONZE ARTIFICIAL</h1>
+
+                    <div class="sessao-info">
+
+                        <div class="sessao-info-text">
+
+                            <h2>A SESSÃO INCLUI:</h2>
+
+                            <ul>
+                                <li>Biquíni de Fitinha</li>
+                                <li>Ativador de Bronze</li>
+                                <li>Desconto na Primeira Vez</li>
+                            </ul>
+
+                            <button class="btn-agendar">AGENDAR</button>
+
+                       </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="premios-section">
+                <img class="top-background" src="./assets/images/bg/colored-bg.svg" alt="top background">
+
+                <div class="content-premios">
+                    <h1 class="titulo-premios">Prêmios e Tv</h1>
+
+                    <img src="./assets/images/premiacao/premios.png" alt="premios e troféus" />
+
+                    <p class="descricao-premios">
+                        Cida Designer já conquistou três troféus em sua carreira
+                        e foi reconhecida como uma das melhores profissionais de
+                        micropigmentação em São Bernardo do Campo, reforçando seu
+                        talento e dedicação em cada detalhe.
+                    </p>
+
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="./assets/scripts/hero.js"></script>
+    <script src="./assets/scripts/bronze.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <script src="./assets/scripts/menu.js"></script>
+    <script src="./assets/scripts/about.js"></script>
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Configuração básica do Swiper
+            var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 3, // 3 slides visíveis no desktop
+            spaceBetween: 60, // Espaçamento fixo de 60px entre slides
+            initialSlide: 1,
+            loop: true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            // Configurações responsivas
+            breakpoints: {
+                // Mobile: 1 slide por vez
+                0: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                },
+                // Tablet: 2 slides
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+                },
+                // Desktop: 3 slides
+                992: {
+                slidesPerView: 3,
+                spaceBetween: 60,
+                }
+            },
+            // Habilitar touch para mobile
+            touchEventsTarget: 'container',
+            touchRatio: 1,
+            touchAngle: 45,
+            simulateTouch: true,
+            });
+
+            // Conectar botões de navegação customizados
+            document.querySelector('.carousel-button-prev').addEventListener('click', function() {
+            swiper.slidePrev();
+            });
+
+            document.querySelector('.carousel-button-next').addEventListener('click', function() {
+            swiper.slideNext();
+            });
+
+            // Adicionar classe active ao slide ativo
+            swiper.on('slideChange', function () {
+            document.querySelectorAll('.swiper-slide').forEach(function(slide) {
+                slide.classList.remove('swiper-slide-active');
+            });
+
+            setTimeout(function() {
+                const activeSlide = document.querySelector('.swiper-slide-active');
+                if (activeSlide) {
+                activeSlide.classList.add('swiper-slide-active');
+                }
+            }, 100);
+            });
+        });
+    </script>
+
+</body>
+</html>
