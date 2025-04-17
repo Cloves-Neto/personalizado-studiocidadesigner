@@ -16,13 +16,13 @@ section.services-section h1 {
     color: var(--creme);
 }
 
-.subtitle {
+.subtitle-services {
     font-size: 1.4rem;
     font-weight: normal;
     font-family: var(--font-karla);
     margin-bottom: 20px;
     font-weight: 300;
-    color: var(--creme);
+    color: var(--creme) !important;
 }
 
 .carousel-wrapper {
@@ -207,7 +207,7 @@ section.services-section h1 {
         font-size: 1.8rem !important;
     }
 
-    .subtitle {
+    .subtitle-services {
         font-size: 1rem;
         padding-top: 10px;
         text-align: center;
@@ -234,7 +234,7 @@ section.services-section h1 {
     }
 
     .cta-button {
-        font-size: 1rem;
+        font-size: 12px;
         padding: 10px 20px;
         width: 220px;
         height: 60px;

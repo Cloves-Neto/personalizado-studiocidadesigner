@@ -20,8 +20,13 @@
     --font-karla: 'Karla', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--verde-escuro);
     min-height: 100vh;
     /* padding-top: 100px; */
 }
+

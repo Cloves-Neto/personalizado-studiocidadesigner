@@ -1,18 +1,20 @@
 /* Seção de Depoimentos */
 .testimonials-section {
     background-color: var(--verde-escuro, #2B7A78); /* Cor teal/verde-água como na imagem */
-    padding: 60px 0;
+    padding: 180px 0;
     position: relative;
     overflow: hidden;
+
   }
 
   /* Título Principal */
   .testimonials-heading {
-    color: #F2F2F2;
+    color: var(--creme);
+    font-family: var(--font-labrada);
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
     text-transform: uppercase;
   }
 
@@ -78,9 +80,11 @@
 
   /* Texto do Depoimento */
   .testimonials-text {
-    color: #2B7A78;
+    color: var(--verde-escuro);
+    font-family: var(--font-karla);
     text-align: center;
     font-size: 1rem;
+    font-weight: 600;
     line-height: 1.5;
     margin-top: 30px;
     font-style: italic;

@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./assets/styles/premios.css">
     <link rel="stylesheet" href="./assets/styles/formulario.css">
     <link rel="stylesheet" href="./assets/styles/testimonials.css">
+    <link rel="stylesheet" href="./assets/styles/studios.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
 
 </head>
 <body>
@@ -27,11 +29,13 @@
         <nav id="navbar">
 
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#video-container">Início</a></li>
+                <li><a href="#services-section">Serviços</a></li>
+                <li><a href="#about-section">Sobre</a></li>
+                <li><a href="#bronze-section">Bronze</a></li>
+                <li><a href="#premios-section">Prêmios</a></li>
+                <li><a href="#testimonials-section">Depoimentos</a></li>
+                <li><a href="#contact-section">Contato</a></li>
             </ul>
 
             <div class="mobile-cta">
@@ -52,16 +56,16 @@
 
         <main class="content">
             <!-- Hero Section Video de Cover -->
-            <section class="video-container">
+            <section id="video-container" class="video-container">
                 <video class="hero-video" autoplay muted loop playsinline>
                     <source src="./assets/videos/banner.mp4" type="video/mp4">
                     Seu navegador não suporta vídeos HTML5.
                 </video>
             </section>
 
-            <section class="services-section">
+            <section id="services-section" class="services-section">
                 <h1>SERVIÇOS</h1>
-                <p class="subtitle">Cuidados personalizados para realçar o seu brilho único.</p>
+                <p class="subtitle-services">Cuidados personalizados para realçar o seu brilho único.</p>
 
                 <div class="carousel-wrapper">
 
@@ -121,7 +125,7 @@
                 <p class="info-text">Para receber nossa tabela de preços completa e garantir seu horário, fale conosco no WhatsApp!</p>
             </section>
 
-            <section class="about-section">
+            <section id="about-section" class="about-section">
                 <div class="background-image">
                     <img src="./assets/images/bg/rows.png" alt="background rows sprite">
                 </div>
@@ -151,7 +155,7 @@
                 </div>
             </section>
 
-            <section class="bronze-section">
+            <section id="bronze-section" class="bronze-section">
 
                 <img class="diamond" src="./assets/images/bg/diamond.png" alt="brilho de fundo">
 
@@ -190,7 +194,7 @@
                 </div>
             </section>
 
-            <section class="premios-section">
+            <section id="premios-section" class="premios-section">
                 <img class="top-background" src="./assets/images/bg/colored-bg.svg" alt="top background">
 
                 <div class="content-premios">
@@ -208,7 +212,42 @@
                 </div>
             </section>
 
-            <section class="testimonials-section">
+            <div class="studios">
+                <div class="studios-header">
+                    <h1 class="studios-h1">
+                        UM FENÔMENO QUE PRECISOU <br>
+                        DE 3 STUDIOS!
+                    </h1>
+                    <p class="subtitle">
+                        São Bernardo do Campo - Rua General Osorio, 87 - Centro<br>
+                        Mogi das Cruzes - Rua XXXXX<br>
+                        Suzano - Rua XXXXXXXXXX
+                    </p>
+                </div>
+
+                <div class="card-carousel">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="/api/placeholder/300/300" alt="Studio 1">
+                        </div>
+                        <div class="card">
+                            <img src="/api/placeholder/300/300" alt="Studio 2">
+                        </div>
+                        <div class="card">
+                            <img src="/api/placeholder/300/300" alt="Studio 3">
+                        </div>
+                        <div class="card">
+                            <img src="/api/placeholder/300/300" alt="Studio 4">
+                        </div>
+                        <div class="card">
+                            <img src="/api/placeholder/300/300" alt="Studio 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section id="testimonials-section" class="testimonials-section">
                   <h2 class="testimonials-heading">O QUE MINHAS CLIENTES <br> MARAVILHOSAS ESTÃO FALANDO</h2>
 
                   <div class="testimonials-grid">
@@ -243,9 +282,9 @@
 
             </section>
 
-            <section class="contact-section">
-                <h2 class="title">ENTRE EM CONTATO</h2>
-                <h1 class="subtitle">TRAZEMOS SUA MELHOR VERSÃO!</h1>
+            <section id="contact-section" class="contact-section">
+                <h2 class="subtitle-contact">ENTRE EM CONTATO</h2>
+                <h1 class="title">TRAZEMOS SUA MELHOR VERSÃO!</h1>
 
                 <div class="contact-info">
                     <a href="https://wa.me/5511965279056" class="contact-card">
@@ -273,7 +312,7 @@
                     </div>
 
                     <div class="form-container">
-                        <h3 class="title">PREENCHA E VAMOS TE CHAMAR</h3>
+                        <h3 class="subtitle-contact">PREENCHA E VAMOS TE CHAMAR</h3>
                         <form class="contact-form" id="contactForm">
                             <input type="text" id="name" placeholder="Nome" required>
                             <input type="tel" id="phone" placeholder="Número" required>
@@ -297,6 +336,69 @@
             </section>
         </main>
 
+        <footer class="footer">
+            <div class="footer-wave"></div>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>Studio Cida Designer</h3>
+                        <p style="margin-bottom: 15px; color: #edf6f9; line-height: 1.6;">
+                            Especializado em realçar a beleza e autoestima de cada cliente com técnicas de design de sobrancelhas, alongamento de cílios e cuidados personalizados. Atendimento com carinho, profissionalismo e dedicação.
+                        </p>
+                        <div class="social-icons">
+
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Atendimento</h3>
+                        <div class="highlight-feature">
+                            <div class="feature-icon">✦</div>
+                            <div class="feature-text">
+                                <h4>Premium </h4>
+                                <p>Tenha um atendimento personalizado</p>
+                            </div>
+                        </div>
+                        <div class="highlight-feature">
+                            <div class="feature-icon">✦</div>
+                            <div class="feature-text">
+                                <h4>Pós Procedimento</h4>
+                                <p>Receba contato com as recomendações de pós procedimento, nosso comprometimento e cuidado sempre ao seu lado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Links</h3>
+                        <ul>
+                            <li><a href="#video-container">Início</a></li>
+                            <li><a href="#services-section">Serviços</a></li>
+                            <li><a href="#about-section">Sobre</a></li>
+                            <li><a href="#bronze-section">Bronze</a></li>
+                            <li><a href="#premios-section">Prêmios</a></li>
+                            <li><a href="#testimonials-section">Depoimentos</a></li>
+                            <li><a href="#contact-section">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <div class="location-container">
+                            <div class="img-container">
+                                <div class="img-placeholder">
+                                    <img src="./assets/images/logo.svg" alt="logo rodape">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p style="margin-bottom: 10px;">&copy; 2025 Studio Cida Designer. Todos os direitos reservados.</p>
+                    <small ><a style="text-decoration: underline; text-align: center; color: white;" href="https://devneto.com.br" target="_blank">Desenvolvido por Cloves Neto</a></small>
+                </div>
+            </div>
+        </footer>
+
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -308,7 +410,7 @@
     <script src="./assets/scripts/menu.js"></script>
     <script src="./assets/scripts/about.js"></script>
     <script src="./assets/scripts/testimonials.js"></script>
-
+    <script src="./assets/scripts/studios.js"></script>
 
 
     <script>
